@@ -21,10 +21,8 @@ body:
   - type: markdown
     id: author
     attributes:
-      label: Author(s)
-      description: Who made this project? Feel free to include names and emails. Format as you like in markdown
       value: |
-        e.g. Firstname Lastname: <name@email.com>
+        Use this section to (optionally) tell us who the authors of this showcase are. Format as you wish 😊 e.g. Firstname Lastname: <name@email.com>
     validations:
       required: false
   - type: textarea
