@@ -1,7 +1,7 @@
 name: Submit Haystack Showcase
 description: Use this form to submit a project you made with Haystack ⭐️
 title: '<title>'
-labels: ["showcase"]
+labels: [showcase]
 body:
   - type: textarea
     id: description
