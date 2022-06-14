@@ -28,7 +28,7 @@ body:
         Use this section to (optionally) tell us who the authors of this showcase are. Format as you wish 😊 e.g. Firstname Lastname: <name@email.com>
     validations:
       required: false
-  - type: textarea
+  - type: input
     id: Link
     attributes:
       label: Link to showcase
