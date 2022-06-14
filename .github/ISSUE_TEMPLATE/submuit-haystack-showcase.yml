@@ -34,7 +34,7 @@ body:
       required: false
   - type: textarea
     id: task
-    attirbutes:
+    attributes:
       label: The us what task this project does
       placeholder: question answering
     validations:
