@@ -3,24 +3,27 @@ description: Use this form to submit a project you made with Haystack ⭐️
 title: '<title>'
 labels: ["showcase"]
 body:
-  - type: markdown
+  - type: textarea
+    id: description
     attributes:
+      label: Description 
       value: |
         Use this section to tell us a bit about your project. This section also supports images (it's markdown) so feel free to include some 😊
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: tagline
     attributes:
-      label: Short description
+      label: Tagline
       description: Use this section to give a simple (1 sentence) description about your showcase. This section will be used in the readme list.
       placeholder: Tell us what this showcase is
       value: "I made a thing"
     validations:
       required: true
-  - type: markdown
+  - type: textarea
     id: author
     attributes:
+      label: Author(s)
       value: |
         Use this section to (optionally) tell us who the authors of this showcase are. Format as you wish 😊 e.g. Firstname Lastname: <name@email.com>
     validations:
