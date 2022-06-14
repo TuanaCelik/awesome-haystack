@@ -1,0 +1,113 @@
+name: Submit Haystack Showcase
+description: Use this form to submit a project you made with Haystack ⭐️
+title: '<title>'
+labels: ["showcase"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this section to tell us a bit about your project. This section also supports images (it's markdown) so feel free to include some 😊
+    validations:
+      required: true
+  - type: textarea
+    id: tagline
+    attributes:
+      label: Short description
+      description: Use this section to give a simple (1 sentence) description about your showcase. This section will be used in the readme list.
+      placeholder: Tell us what this showcase is
+      value: "I made a thing"
+    validations:
+      required: true
+  - type: markdown
+    id: author
+    attributes:
+      label: Author(s)
+      description: Who made this project? Feel free to include names and emails. Format as you like in markdown
+      value: |
+        e.g. Firstname Lastname: <name@email.com>
+    validations:
+      required: false
+  - type: textarea
+    id: Link
+    attributes:
+      label: Link to showcase
+      description: Is your project accessible as a GitHub repo, live demo etc? Feel free to share the link here 🌍
+    validations:
+      required: false
+  - type: textarea
+    id: task
+    attirbutes:
+      label: The us what task this project does
+      placeholder: question answering
+    validations:
+      required: false
+  - type: checkboxes
+    id: haystack-components
+    attributes:
+      label: Haystack Nodes
+      description: (Optional) Tell us what Haystack components were used for this project
+      options:
+        - label: BM25Retriever
+          required: false
+        - label: TableTextRetriever
+          required: false
+        - label: EmbeddingRetriever
+          required: false
+        - label: DensePassageRetriever
+          required: false
+        - label: TfidfRetriever
+          required: false
+        - label: FARMReader
+          required: false
+        - label: TableReader
+          required: false
+        - label: RAGenerator
+          required: false
+        - label: TransformersSummarizer
+          required: false
+        - label: TransformersTranslator
+          required: false
+        - label: TransformersQueryClassifier
+          required: false
+        - label: SklearnQueryClassifier
+          required: false
+        - label: QuestionGenerator
+          required: false
+        - label: TransformersDocumentClassifier
+          required: false
+        - label: EntityExtractor
+          required: false
+        - label: RouteDocuments
+          required: false
+        - label: JoinDocuments
+          required: false
+        - label: JoinAnswers
+          required: false
+        - label: Docs2Answers
+          required: false
+        - label: Custom Node
+          required: false
+  - type: checkboxes
+    id: documentstores
+    attributes:
+      label: Document Stores
+      description: (Optional) Tell us what document store you used
+      options:
+        - label: ElasticsearchDocumentsStore
+          required: false
+        - label: OpenSearchDocumsntStore
+          required: false
+        - label: InMemoryDocumentStore
+          required: false
+        - label: WeaviateDocumentStore
+          required: false
+        - label: FAISSDocumentStore
+          required: false
+        - label: OpenDistroElasticsearchDocumentStore
+          required: false
+        - label: MilvusDocumentStore
+          required: false
+        - label: SQLDocumentStore
+          required: false
+        - label: PineconeDocumentStore
+          required: false
